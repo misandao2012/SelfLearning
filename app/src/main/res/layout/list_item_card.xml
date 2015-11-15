@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/card_list_item_backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/card_list_item_cardNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/card_list_item_firstNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_list_item_cardNumberTextView"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/card_list_item_lastNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_list_item_cardNumberTextView"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@id/card_list_item_firstNameTextView"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/card_list_item_goodThruTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_list_item_firstNameTextView"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/good_thru"
+            android:textColor="@android:color/white"
+            android:textSize="7sp"/>
+
+        <TextView
+            android:id="@+id/card_list_item_expireDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_list_item_firstNameTextView"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@id/card_list_item_goodThruTextView"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</FrameLayout>
